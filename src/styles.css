@@ -1,16 +1,25 @@
 .App {
+  height: 100vh;
+  display: flex;
   font-family: sans-serif;
   text-align: center;
-  background-color: black;
+  background-color: ;
+  align-items: center;
+  justify-content: center;
+  background-color: #c8a898;
 } /* Outer button container */
+
+/* CSS */
 .outer-button {
+  margin: auto;
+  font-size: 4px;
   display: inline-block;
   position: relative;
   width: 150px; /* Set the desired width */
-  height: 50px; /* Set the desired height */
+  height: 40px; /* Set the desired height */
   padding: 10px;
-  background-color: orangered;
-  background-image: radial-gradient(circle at center, #f1af44, #f55617);
+  background-color: rgb(125, 122, 121);
+  background-image: radial-gradient(circle at center, #52504f, #0a0a0a);
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -20,13 +29,15 @@
 /* Smaller button shape */
 .outer-button::before {
   content: "";
+
   display: inline-block;
   width: 110px; /* Set the desired width */
-  height: 30px; /* Set the desired height */
+  height: 10px; /* Set the desired height */
   background-color: none;
   border-radius: 40px;
   position: absolute;
-  top: 35%;
+  top: 25%;
+
   left: 50%;
   background-image: linear-gradient(
     to top,
